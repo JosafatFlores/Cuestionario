@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/Examen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E8EBF1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Examen Capitulo 1 CNNA 4"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="1.- ¿Qué es una importante primera consideración al comenzar a diseñar una red?"
+                android:textSize="17dp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/R11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ1"
+                    android:text="Tamaño de la red" />
+
+                <RadioButton
+                    android:id="@+id/R12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ1"
+                    android:text="Seguridad de acceso" />
+
+                <RadioButton
+                    android:id="@+id/R13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ1"
+                    android:text="Protocolos al ser utilizados" />
+
+                <RadioButton
+                    android:id="@+id/R14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ1"
+                    android:text="Tipo de apliacaciones" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2.- ¿Qué módulo de red es el componente fundamental de un diseño de campus?"
+                android:textSize="17sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/R21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ2"
+                    android:text="Módulo de acceso-distribución" />
+
+                <RadioButton
+                    android:id="@+id/R22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ2"
+                    android:text="módulo de servicios" />
+
+                <RadioButton
+                    android:id="@+id/R23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ2"
+                    android:text="centro de datos" />
+
+                <RadioButton
+                    android:id="@+id/R24"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ2"
+                    android:text="Tipo de apliacaciones" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3.- Consulte la presentación. ¿Qué tipo de conectividad ISP al borde proveedor de servicios está siendo utilizado por la empresa A?"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pregunta" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/R31"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ3"
+                    android:text="Conexión de hosts múltiples doble" />
+
+                <RadioButton
+                    android:id="@+id/R32"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ3"
+                    android:text="Conexión de hosts múltiples" />
+
+                <RadioButton
+                    android:id="@+id/R33"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ3"
+                    android:text="Conexión simple" />
+
+                <RadioButton
+                    android:id="@+id/R34"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ3"
+                    android:text="Conexión doble" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="4.- ¿Qué dos dispositivos comúnmente se encontraría en la capa de acceso de la modelo de diseño de la empresa LAN jerárquica? (Elija dos.)"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/R41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxQ1"
+                android:text="Capa 3 dispositivo" />
+
+            <CheckBox
+                android:id="@+id/R42"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxQ2"
+                android:text="punto de acceso" />
+
+            <CheckBox
+                android:id="@+id/R43"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxQ3"
+                android:text="Conmutador de nivel 2" />
+
+            <CheckBox
+                android:id="@+id/R44"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxQ4"
+                android:text="Tipo de apliacaciones" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="5.- ¿Qué enfoque en la creación de redes permite a cambios en la red, las actualizaciones o la introducción de nuevos servicios de una forma controlada y puesta en escena? "
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/texQ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:hint="" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="6.- ¿Cuál es la creación de un nuevo reto para los departamentos de TI mediante el cambio de la frontera de la red de la empresa?"
+                android:textSize="17dp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/R61"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ6"
+                    android:text="Las tablet PC" />
+
+                <RadioButton
+                    android:id="@+id/R62"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ6"
+                    android:text="escritorios propiedad de la compañía" />
+
+                <RadioButton
+                    android:id="@+id/R63"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ6"
+                    android:text="los costos de energía" />
+
+                <RadioButton
+                    android:id="@+id/R64"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ6"
+                    android:text="conmutación de capa de acceso" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="7.- Qué red arquitectura funciones a través de una combinación de tecnologías que incluyen cable, inalámbricas, seguridad, y mucho más?"
+                android:textSize="17dp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/R71"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ7"
+                    android:text="Cisco Borderless" />
+
+                <RadioButton
+                    android:id="@+id/R72"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ7"
+                    android:text="Cisco Enterprise Campus" />
+
+                <RadioButton
+                    android:id="@+id/R73"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ7"
+                    android:text="Cisco Empresa Edge" />
+
+                <RadioButton
+                    android:id="@+id/R74"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ7"
+                    android:text="Cisco Rama Empresa" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="8.- ¿Qué arquitectura de red combina componentes individuales para proporcionar una solución completa que permite a la gente a cooperar y contribuir a la producción de algo?"
+                android:textSize="17dp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/R81"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ8"
+                    android:text="Cisco Enterprise Campus Arquitectura" />
+
+                <RadioButton
+                    android:id="@+id/R82"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ8"
+                    android:text="Cisco Empresa Rama Arquitectura" />
+
+                <RadioButton
+                    android:id="@+id/R83"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RadioButtonQ8"
+                    android:text="Arquitectura Cisco Borderless Network" />
+
+                <RadioButton
+                    android:id="@+id/R84"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="RadioButtonQ8"
+                    android:text="Cisco Collaboration Architecture" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="9.-Llena el espacio en blanco.
+
+La reducción de la complejidad del diseño de la red dividiendo una red en menor
+áreas es un ejemplo de un modelo de red"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/texQ9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:hint="" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="10.- Qué tres medidas se pueden tomar para resolver los problemas de enrutamiento de capa 3 de accesibilidad del router protocolo cuando se utiliza Frame Relay? (Elija tres.)Qué tres medidas se pueden tomar para resolver los problemas de enrutamiento de capa 3 de accesibilidad del router protocolo cuando se utiliza Frame Relay? (Elija dos.)"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/ch10_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxR10_1"
+                android:text="Utilice subinterfaces." />
+
+            <CheckBox
+                android:id="@+id/ch10_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxR10_2"
+                android:text="Desactivar ARP inverso." />
+
+            <CheckBox
+                android:id="@+id/ch10_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxR10_3"
+                android:text="Utilice una topología de malla completa." />
+
+            <CheckBox
+                android:id="@+id/ch10_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="onCheckboxR10_4"
+                android:text="Usar la palabra clave cisco como el tipo de LMI." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Control"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edit_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:inputType="number"
+                android:digits="1234567890"
+                android:hint="" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
