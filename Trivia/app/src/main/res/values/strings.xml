@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="send_answers">Send Answers</string>
+</resources>

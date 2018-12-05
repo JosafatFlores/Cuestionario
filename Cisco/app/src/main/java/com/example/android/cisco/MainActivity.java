@@ -1,26 +1,18 @@
 package com.example.android.cisco;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,17 +49,16 @@ public class MainActivity extends AppCompatActivity {
                 File internalStorageDir = getFilesDir();
 
                 File alice = new File(internalStorageDir, "txt.csv");
-try{
-    // Create file output stream
-    FileOutputStream fos = new FileOutputStream(alice);
+                try {
+                    // Create file output stream
+                    FileOutputStream fos = new FileOutputStream(alice);
 // Write a line to the file
-    fos.write("Alice,25,1".getBytes());
+                    fos.write("Alice,25,1".getBytes());
 // Close the file output stream
-    fos.close();
-}catch (){
+                    fos.close();
+                } catch (java.io.IOException ex) {
 
-}
-
+                }
 
 
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
@@ -306,6 +297,7 @@ try{
 
 
     public void onCheckboxQ1(View view) {
+
         CheckBox R41 = (CheckBox) findViewById(R.id.R41);
         CheckBox R42 = (CheckBox) findViewById(R.id.R42);
         CheckBox R43 = (CheckBox) findViewById(R.id.R43);
